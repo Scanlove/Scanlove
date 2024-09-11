@@ -3,8 +3,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     overflow: hidden;
-    background: #000;
-    color: #fff;
+    background: #ffebf3; /* Fondo romántico con un toque rosado claro */
+    color: #ff4b81;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -24,10 +24,31 @@ body {
 h1 {
     font-size: 4rem;
     margin-bottom: 20px;
+    color: #ff4b81;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Battery Loading Animation */
+.battery {
+    width: 200px;
+    height: 80px;
+    border: 5px solid #ff4b81;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.battery-level {
+    width: 0;
+    height: 100%;
+    background-color: #ff4b81;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
 }
 
 p {
     font-size: 2rem;
+    color: #ff4b81;
 }
 
 #progress {
@@ -46,12 +67,14 @@ p {
 .title {
     font-size: 5rem;
     margin-bottom: 20px;
-    background: -webkit-linear-gradient(45deg, #ff416c, #ff4b2b);
+    background: -webkit-linear-gradient(45deg, #ff4b81, #ff7e9c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: fadeInTitle 1s ease-in-out;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
 }
 
+/* Slideshow Section */
 .slideshow {
     position: relative;
     width: 100%;
@@ -66,15 +89,15 @@ p {
     background-size: cover;
     background-position: center;
     opacity: 0;
-    animation: slideAnimation 30s infinite;
+    animation: slideAnimation 25s infinite;
 }
 
-/* Slide Animations */
+/* Animations for each slide */
 .slide:nth-child(1) { animation-delay: 0s; }
-.slide:nth-child(2) { animation-delay: 6s; }
-.slide:nth-child(3) { animation-delay: 12s; }
-.slide:nth-child(4) { animation-delay: 18s; }
-.slide:nth-child(5) { animation-delay: 24s; }
+.slide:nth-child(2) { animation-delay: 5s; }
+.slide:nth-child(3) { animation-delay: 10s; }
+.slide:nth-child(4) { animation-delay: 15s; }
+.slide:nth-child(5) { animation-delay: 20s; }
 
 @keyframes slideAnimation {
     0% { opacity: 0; }
@@ -84,7 +107,7 @@ p {
     100% { opacity: 0; }
 }
 
-/* Fade in effect for title */
+/* Title Fade In Effect */
 @keyframes fadeInTitle {
     0% { opacity: 0; transform: translateY(-50px); }
     100% { opacity: 1; transform: translateY(0); }
