@@ -1,31 +1,91 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    background-color: #f0f0f0;
 }
 
+/* Loader Section */
 #loader {
-    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 2rem;
 }
 
 #progress {
     font-weight: bold;
 }
 
+/* Content Section */
 #content {
-    margin-top: 20px;
-}
-
-.gallery {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
+    height: 100vh;
 }
 
-.gallery img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 2px solid #000;
-    border-radius: 10px;
+.title {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(45deg, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeInTitle 1s ease-in-out;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: slideAnimation 30s infinite;
+}
+
+/* Slide Animations */
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 6s; }
+.slide:nth-child(3) { animation-delay: 12s; }
+.slide:nth-child(4) { animation-delay: 18s; }
+.slide:nth-child(5) { animation-delay: 24s; }
+
+@keyframes slideAnimation {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    20% { opacity: 1; }
+    30% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Fade in effect for title */
+@keyframes fadeInTitle {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
