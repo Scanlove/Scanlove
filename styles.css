@@ -1,0 +1,31 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#loader {
+    margin-top: 20%;
+}
+
+#progress {
+    font-weight: bold;
+}
+
+#content {
+    margin-top: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
