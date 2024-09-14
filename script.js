@@ -19,6 +19,8 @@ if (page === 'index') {
     images = ['l1.jpg', 'l2.jpg', 'l3.jpg', 'l4.jpg', 'l5.jpg'];
 }  else if (page === 'M_S') {
     images = ['m1.jpg', 'm2.jpg', 'm3.jpg', 'm4.jpg', 'm5.jpg'];
+} else if (page === 'S_R') {
+    images = ['foto1.jpg', 'foto1.jpg', 'foto1.jpg', 'foto1.jpg', 'foto1.jpg'];
 }
 
 
