@@ -15,9 +15,10 @@ if (page === 'index') {
     images = ['foto1.jpg', 'foto2.jpg', 'foto3.jpg', 'foto4.jpg', 'foto5.jpg'];
 } else if (page === 'loveF&F') {
     images = ['ff1.jpg', 'ff2.jpg', 'ff3.jpg', 'ff4.jpg', 'ff5.jpg', 'ff6.jpg'];
-} else if (page === 'L&O') {
+} else if (page === 'L_O') {
     images = ['l1.jpg', 'l2.jpg', 'l3.jpg', 'l4.jpg', 'l5.jpg'];
-} // <- Cierre correcto del else if
+}
+
 
 function simulateLoading() {
     if (progress < 100) {
