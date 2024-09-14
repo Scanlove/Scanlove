@@ -17,6 +17,7 @@ if (page === 'index') {
     images = ['ff1.jpg', 'ff2.jpg', 'ff3.jpg', 'ff4.jpg', 'ff5.jpg', 'ff6.jpg'];
 }  else if (page === 'L&O') {
     images = ['l1.jpg', 'l2.jpg', 'l3.jpg', 'l4.jpg', 'l5.jpg'];
+}
 
 function simulateLoading() {
     if (progress < 100) {
