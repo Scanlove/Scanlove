@@ -5,8 +5,17 @@ let progressText = document.getElementById('progress');
 let batteryLevel = document.getElementById('battery-level');
 let gallery = document.getElementById('gallery');
 
-// Lista de imágenes
-let images = ['foto1.jpg', 'foto2.jpg', 'foto3.jpg', 'foto4.jpg', 'foto5.jpg'];
+// Identificar la página
+let page = document.querySelector('script[data-page]').getAttribute('data-page');
+
+// Lista de imágenes específica para cada página
+let images = [];
+
+if (page === 'index') {
+    images = ['foto1.jpg', 'foto2.jpg', 'foto3.jpg', 'foto4.jpg', 'foto5.jpg'];
+} else if (page === 'loveF&F') {
+    images = ['ff1.jpg', 'ff2.jpg', 'ff3.jpg', 'ff4.jpg', 'ff5.jpg', 'ff6.jpg'];
+}
 
 function simulateLoading() {
     if (progress < 100) {
@@ -26,7 +35,6 @@ function showImages() {
         setTimeout(() => {
             let img = document.createElement('img');
             img.src = src;
-            img.style.animationDelay = '0s';
             gallery.appendChild(img);
         }, index * 500); // Retraso de aparición para cada imagen
     });
