@@ -20,7 +20,7 @@ if (page === 'index') {
 }  else if (page === 'M_S') {
     images = ['m1.jpg', 'm2.jpg', 'm3.jpg', 'm4.jpg', 'm5.jpg'];
 } else if (page === 'S_R') {
-    images = ['foto1.jpg', 'foto1.jpg', 'foto1.jpg', 'foto1.jpg', 'foto1.jpg'];
+    images = ['foto1.jpg', 'foto2.jpeg', 'foto1.jpg', 'foto1.jpg', 'foto1.jpg'];
 }
 
 
