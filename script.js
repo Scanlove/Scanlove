@@ -16,7 +16,7 @@ if (page === 'index') {
 } else if (page === 'loveF&F') {
     images = ['ff1.jpg', 'ff2.jpg', 'ff3.jpg', 'ff4.jpg', 'ff5.jpg', 'ff6.jpg'];
 } else if (page === 'L_O') {
-    images = ['l1.jpg', 'l2.jpg', 'l3.jpg', 'l4.jpg', 'l5.jpg'];
+    images = ['d1.jpeg', 'd2.jpeg', 'd3.jpeg', 'd4.jpeg', 'd5.jpeg'];
 }  else if (page === 'M_S') {
     images = ['m1.jpg', 'm2.jpg', 'm3.jpg', 'm4.jpg', 'm5.jpg'];
 } else if (page === 'S_R') {
