@@ -24,7 +24,7 @@ if (page === 'index') {
 } else if (page === 'aniversario') {
     images = ['boda1.jpeg', 'boda2.jpeg', 'boda3.jpeg', 'boda4.jpeg', 'boda5.jpeg', 'boda6.jpeg'];
 }  else if (page === 'love') {
-    images = ['love1.jpeg', 'love2.jpeg', 'love3.jpeg', 'love4.jpeg', 'love5.jpeg', 'love6.jpeg'];
+    images = ['love1.jpeg', 'love2.jpeg', 'love3.jpeg', 'love4.jpeg', 'love5.jpeg'];
 }
 
 
