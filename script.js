@@ -22,7 +22,7 @@ if (page === 'index') {
 } else if (page === 'S_R') {
     images = ['car1.jpeg', 'car2.jpeg', 'car3.jpeg', 'car4.jpeg', 'car5.jpeg', 'car6.jpeg'];
 } else if (page === 'aniversario') {
-    images = ['boda1.jpeg', 'boda.jpeg', 'boda3.jpeg', 'boda4.jpeg', 'boda5.jpeg', 'boda6.jpeg'];
+    images = ['boda1.jpeg', 'boda2.jpeg', 'boda3.jpeg', 'boda4.jpeg', 'boda5.jpeg', 'boda6.jpeg'];
 }
 
 
