@@ -5,6 +5,23 @@
     <title>ANIVERSARIO DE BRONCE💖</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ajuste para el tamaño del h1 en dispositivos móviles */
+        .title {
+            font-size: 24px; /* Tamaño por defecto para pantallas más grandes */
+            text-align: center;
+        }
+        .title span {
+            display: block;
+        }
+
+        /* Estilos específicos para pantallas pequeñas */
+        @media screen and (max-width: 600px) {
+            .title {
+                font-size: 18px; /* Tamaño más pequeño en pantallas pequeñas */
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="loader">
@@ -16,13 +33,16 @@
     </div>
 
     <div id="content" style="display:none;">
-        <h1 class="title">ANIVERSARIO #8 </h1> 
-        <h2 class="title">BODAS DE BRONCE❤️</h2> 
+        <h1 class="title">
+            <span>ANIVERSARIO #8</span>
+            <span>BODAS DE BRONCE❤️</span>
+        </h1>
+      
         <div class="gallery" id="gallery">
             <!-- Las imágenes se cargarán desde script.js -->
         </div>
     </div>
 
-    <script src="script.js" data-page="aniversario"></script> <!-- Identificador corregido -->
+    <script src="script.js" data-page="aniversario"></script>
 </body>
 </html>
