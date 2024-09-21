@@ -23,7 +23,7 @@ if (page === 'index') {
     images = ['car1.jpeg', 'car2.jpeg', 'car3.jpeg', 'car4.jpeg', 'car5.jpeg', 'car6.jpeg'];
 } else if (page === 'aniversario') {
     images = ['boda1.jpeg', 'boda2.jpeg', 'boda3.jpeg', 'boda4.jpeg', 'boda5.jpeg', 'boda6.jpeg'];
-}  else if (page === 'love') {
+}  else if (page === 'amorlove') {
     images = ['love1.jpeg', 'love2.jpeg', 'love3.jpeg', 'love4.jpeg', 'love5.jpeg'];
 }
 
