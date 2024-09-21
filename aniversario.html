@@ -2,11 +2,26 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ANIVERSARIO DE BRONCE💖</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola Mundo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hola Mundo</h1>
+    <div id="loader">
+        <h1>ESPERA...</h1>
+        <div class="battery">
+            <div class="battery-level" id="battery-level"></div>
+        </div>
+        <p>CARGANDO <span id="progress">0</span>%</p>
+    </div>
+
+    <div id="content" style="display:none;">
+        <h1 class="title">ANIVERSARIO #8 BODAS DE BRONCE❤️</h1> 
+        <div class="gallery" id="gallery">
+            <!-- Las imágenes se cargarán desde script.js -->
+        </div>
+    </div>
+
+    <script src="script.js" data-page="aniversario"></script> <!-- Identificador corregido -->
 </body>
 </html>
