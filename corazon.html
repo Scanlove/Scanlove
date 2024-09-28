@@ -2,11 +2,26 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>Love M&S💖</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola Mundo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hola Mundo OBLU</h1>
-    <p>Este es mi primer documento HTML.</p>
+    <div id="loader">
+        <h1>ESPERA...</h1>
+        <div class="battery">
+            <div class="battery-level" id="battery-level"></div>
+        </div>
+        <p>CARGANDO <span id="progress">0</span>%</p>
+    </div>
+
+    <div id="content" style="display:none;">
+        <h1 class="title" style="font-size: 1.2rem;">Feliz cumpleaños al primer amor de mi vida y al mejor abuelo que la vida le pudo dar a mi hijo🤍</h1> 
+        <div class="gallery" id="gallery">
+            <!-- Las imágenes se cargarán desde script.js -->
+        </div>
+    </div>
+
+    <script src="script.js" data-page="cumple"></script> <!-- Identificador corregido -->
 </body>
 </html>
