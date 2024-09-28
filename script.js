@@ -27,6 +27,8 @@ if (page === 'index') {
     images = ['love1.jpeg', 'love2.jpeg', 'love3.jpeg', 'love4.jpeg', 'love5.jpeg'];
 } else if (page === 'cbba') {
     images = ['cb1.jpeg', 'cb2.jpeg', 'cb3.jpeg', 'cb4.jpeg', 'cb5.jpeg'];
+} else if (page === 'cumple') {
+    images = ['f1.jpeg', 'f2.jpeg', 'f3.jpeg', 'f4.jpeg', 'f5.jpeg'];
 }
 
 
